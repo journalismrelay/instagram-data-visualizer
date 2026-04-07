@@ -6,6 +6,8 @@ A project by [Journalism Relay Project](https://journalismrelay.org).
 
 ## What it does
 
+![Dashboard of the app](dash.png)
+
 - **Complete overview** of your Instagram account: likes, comments, followers, following, posts, stories, saved items, and more
 - **Activity over time**: charts showing likes, comments, posts, stories, followers, and saved posts per month
 - **Connections analysis**: who doesn't follow you back, who you don't follow back, close friends, blocked, unfollowed
