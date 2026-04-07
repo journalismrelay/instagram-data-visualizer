@@ -1,6 +1,6 @@
 # Instagram Data Visualizer
 
-A desktop app to explore your Instagram data export locally and privately. **Your data never leaves your computer.**
+A desktop app to explore your Instagram data export locally and privately. Take control of your data, which **never leaves your computer.**
 
 A project by [Journalism Relay Project](https://journalismrelay.org).
 
@@ -9,7 +9,7 @@ A project by [Journalism Relay Project](https://journalismrelay.org).
 - **Complete overview** of your Instagram account: likes, comments, followers, following, posts, stories, saved items, and more
 - **Activity over time**: charts showing likes, comments, posts, stories, followers, and saved posts per month
 - **Connections analysis**: who doesn't follow you back, who you don't follow back, close friends, blocked, unfollowed
-- **Ads & tracking exposure**: see the 3,000+ advertisers who have your data, targeting categories Instagram assigns you, and which apps share your activity with Meta
+- **Ads & tracking exposure**: see the thousands of advertisers who have your data, targeting categories Instagram assigns you, and which apps share your activity with Meta
 - **Stories & interactions**: your stories, plus polls, emoji sliders, quizzes, and questions you've answered
 - **Everything links back to Instagram**: liked posts, comments, profiles — all clickable
 - **Supports both JSON and HTML exports**: JSON gives full data; HTML gives a limited overview
