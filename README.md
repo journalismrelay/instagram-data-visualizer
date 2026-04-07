@@ -25,11 +25,19 @@ A project by [Journalism Relay Project](https://journalismrelay.org).
 
 ## Download
 
-Go to the [Releases](https://github.com/journalismrelay/instagram-data-visualizer/releases) page and download the installer for your operating system:
+### macOS
+- [**Download for Mac (Apple Silicon)**](https://github.com/journalismrelay/instagram-data-visualizer/releases/download/untagged-d49a1c24853fff602a1f/Instagram.Data.Visualizer-1.0.0-arm64.dmg) — M1, M2, M3, M4 Macs (2020+)
+- [Download for Mac (Intel)](https://github.com/journalismrelay/instagram-data-visualizer/releases/download/untagged-d49a1c24853fff602a1f/Instagram.Data.Visualizer-1.0.0.dmg) — older Macs (pre-2020)
+- Also available as `.zip`: [Apple Silicon](https://github.com/journalismrelay/instagram-data-visualizer/releases/download/untagged-d49a1c24853fff602a1f/Instagram.Data.Visualizer-1.0.0-arm64-mac.zip) · [Intel](https://github.com/journalismrelay/instagram-data-visualizer/releases/download/untagged-d49a1c24853fff602a1f/Instagram.Data.Visualizer-1.0.0-mac.zip)
 
-- **macOS**: `.dmg` (Intel and Apple Silicon)
-- **Windows**: `.exe` installer or portable `.exe`
-- **Linux**: `.AppImage` or `.deb`
+### Windows
+- [**Download for Windows**](https://github.com/journalismrelay/instagram-data-visualizer/releases/download/untagged-d49a1c24853fff602a1f/Instagram.Data.Visualizer.Setup.1.0.0.exe) — installer for Windows 10/11
+
+### Linux
+- [**Download for Linux (AppImage)**](https://github.com/journalismrelay/instagram-data-visualizer/releases/download/untagged-d49a1c24853fff602a1f/Instagram.Data.Visualizer-1.0.0.AppImage) — runs on any distro, no installation needed
+- [Download for Linux (.deb)](https://github.com/journalismrelay/instagram-data-visualizer/releases/download/untagged-d49a1c24853fff602a1f/instagram-data-visualizer_1.0.0_amd64.deb) — Ubuntu, Debian, and derivatives
+
+Or browse all files on the [Releases](https://github.com/journalismrelay/instagram-data-visualizer/releases) page.
 
 ## How to get your Instagram data
 
