@@ -1,0 +1,77 @@
+{
+  "name": "instagram-data-visualizer",
+  "version": "1.0.0",
+  "description": "Visualize your Instagram data export locally and privately. Your data never leaves your computer.",
+  "author": "Journalism Relay Project <https://journalismrelay.org>",
+  "license": "MIT",
+  "homepage": "https://github.com/journalismrelay/instagram-data-visualizer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/journalismrelay/instagram-data-visualizer"
+  },
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "DEVTOOLS=1 electron .",
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --win",
+    "build:linux": "electron-builder --linux",
+    "build:all": "electron-builder --mac --win --linux"
+  },
+  "build": {
+    "appId": "org.journalismrelay.instagram-data-visualizer",
+    "productName": "Instagram Data Visualizer",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "src/**/*"
+    ],
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["x64", "arm64"]
+        },
+        {
+          "target": "zip",
+          "arch": ["x64", "arm64"]
+        }
+      ],
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": ["x64"]
+        },
+        {
+          "target": "deb",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "journalismrelay",
+      "repo": "instagram-data-visualizer"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  }
+}

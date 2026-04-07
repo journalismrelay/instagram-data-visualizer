@@ -1,0 +1,188 @@
+/* ===================================
+   Landing Screen
+   Edit this file to customize the
+   folder-selection / welcome screen.
+   =================================== */
+
+#landing-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.landing-container {
+  text-align: center;
+  max-width: 520px;
+}
+
+.landing-icon {
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.landing-container h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.landing-subtitle {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.landing-privacy {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+/* Primary action button */
+.primary-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.primary-btn:hover {
+  background: var(--accent-hover);
+}
+
+.primary-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Selected path display */
+.selected-path {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 12px;
+  word-break: break-all;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.processing-message {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+/* Error message */
+.error-message {
+  font-size: 13px;
+  color: #dc2626;
+  margin-top: 12px;
+}
+
+/* How-to Callout */
+.how-to-callout {
+  margin-top: 40px;
+  padding: 24px 20px;
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  text-align: left;
+  max-width: 520px;
+}
+
+.how-to-callout h2 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: center;
+  color: var(--text);
+}
+
+.how-to-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-row p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.step-row p strong {
+  color: var(--text);
+}
+
+.step-row a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.step-row a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.landing-footer {
+  margin-top: 32px;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.landing-footer a {
+  color: var(--text-muted);
+  text-decoration: underline;
+}
+
+.landing-footer a:hover {
+  color: var(--text);
+}
