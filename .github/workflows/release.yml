@@ -17,13 +17,15 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - run: npm run build:mac
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npx electron-builder --mac --publish never
       - uses: actions/upload-artifact@v4
         with:
           name: mac-builds
-          path: build/*.dmg
+          path: |
+            build/*-arm64.dmg
+            build/*-mac.zip
+            build/*.dmg
+            !build/*blockmap*
 
   build-windows:
     runs-on: windows-latest
@@ -33,14 +35,14 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - run: npm run build:win
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npx electron-builder --win --publish never
       - uses: actions/upload-artifact@v4
         with:
           name: windows-builds
           path: |
-            build/*.exe
+            build/*Setup*.exe
+            build/*portable*.exe
+            !build/*blockmap*
 
   build-linux:
     runs-on: ubuntu-latest
@@ -50,9 +52,7 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - run: npm run build:linux
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npx electron-builder --linux --publish never
       - uses: actions/upload-artifact@v4
         with:
           name: linux-builds
@@ -80,6 +80,9 @@ jobs:
         with:
           name: linux-builds
           path: release-assets
+
+      - name: List assets
+        run: ls -la release-assets/
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
