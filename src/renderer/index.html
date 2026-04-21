@@ -20,22 +20,10 @@
       </div>
       <h1>Instagram Data Visualizer</h1>
       <p class="landing-subtitle">Explore your Instagram data export locally and privately.</p>
-      <p class="landing-privacy">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#323232" stroke-width="2"/>
-        <path d="M12 8L12 13" stroke="#323232" stroke-width="2" stroke-linecap="round"/>
-        <path d="M12 16V15.9888" stroke="#323232" stroke-width="2" stroke-linecap="round"/>
-        </svg> 
-        Your data <u>never</u> leaves your computer.</p>
-      <button id="select-folder-btn" class="primary-btn">Select Instagram Data Folder(s)</button>
-      <p id="selected-path" class="selected-path"></p>
-      <div id="processing-status" style="display:none">
-        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
-        <p id="processing-message" class="processing-message"></p>
-      </div>
-      <p id="error-message" class="error-message" style="display:none"></p>
+      <p class="landing-privacy">Your data <u>never</u> leaves your computer.</p>
+
       <div class="how-to-callout">
-        <h2>How to get your Instagram data</h2>
+        <h2>Start here: get your Instagram data</h2>
         <div class="how-to-steps">
           <div class="step-row">
             <span class="step-number">1</span>
@@ -65,15 +53,19 @@
             <span class="step-number">7</span>
             <p>Download the file and <strong>unzip it</strong></p>
           </div>
-          <div class="step-row">
-            <span class="step-number">8</span>
-            <p>Click the button above and select the <strong>unzipped folder</strong></p>
-          </div>
-          <div class="step-row">
-            <span class="step-number">9</span>
-            <p>There is nothing else! </p>
-          </div>
         </div>
+
+        <div class="callout-divider"></div>
+
+        <h2>Then, load your data</h2>
+        <p class="callout-hint">Select the unzipped folder (or multiple folders if your export was split).</p>
+        <button id="select-folder-btn" class="primary-btn">Select Instagram Data Folder(s)</button>
+        <p id="selected-path" class="selected-path"></p>
+        <div id="processing-status" style="display:none">
+          <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+          <p id="processing-message" class="processing-message"></p>
+        </div>
+        <p id="error-message" class="error-message" style="display:none"></p>
       </div>
       <div class="landing-footer">
         A project by <a href="https://journalismrelay.org" target="_blank" rel="noopener">Journalism Relay Project</a> &middot; <a href="https://journalismrelay.org/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>

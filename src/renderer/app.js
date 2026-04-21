@@ -3,8 +3,15 @@
 // ===================================
 
 document.getElementById('select-folder-btn').addEventListener('click', async () => {
+  const btn = document.getElementById('select-folder-btn');
+  btn.textContent = 'Selecting...';
+
   const result = await window.electronAPI.selectFolder();
-  if (!result.paths) return;
+
+  if (!result.paths) {
+    btn.textContent = 'Select Instagram Data Folder(s)';
+    return;
+  }
 
   const errorEl = document.getElementById('error-message');
   errorEl.style.display = 'none';
@@ -14,7 +21,8 @@ document.getElementById('select-folder-btn').addEventListener('click', async () 
     : `${result.paths.length} folders selected`;
   document.getElementById('selected-path').textContent = pathLabel;
   document.getElementById('processing-status').style.display = 'block';
-  document.getElementById('select-folder-btn').disabled = true;
+  btn.disabled = true;
+  btn.textContent = 'Processing...';
 
   window.electronAPI.onProcessingProgress(({ step, total, message }) => {
     document.getElementById('progress-fill').style.width = `${(step / total) * 100}%`;
@@ -37,14 +45,16 @@ document.getElementById('select-folder-btn').addEventListener('click', async () 
       errorEl.textContent = 'Failed to load dashboard: ' + e.message;
       errorEl.style.display = 'block';
       document.getElementById('processing-status').style.display = 'none';
-      document.getElementById('select-folder-btn').disabled = false;
+      btn.disabled = false;
+      btn.textContent = 'Select Instagram Data Folder(s)';
     }
     return;
   } else {
     errorEl.textContent = processResult.error;
     errorEl.style.display = 'block';
     document.getElementById('processing-status').style.display = 'none';
-    document.getElementById('select-folder-btn').disabled = false;
+    btn.disabled = false;
+    btn.textContent = 'Select Instagram Data Folder(s)';
   }
 });
 

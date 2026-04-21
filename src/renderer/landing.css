@@ -170,6 +170,29 @@
   text-decoration: underline;
 }
 
+.callout-divider {
+  border-top: 1px solid var(--border);
+  margin: 20px 0;
+}
+
+.callout-hint {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.how-to-callout .primary-btn {
+  width: 100%;
+}
+
+.how-to-callout .selected-path {
+  margin-top: 10px;
+}
+
+.how-to-callout .error-message {
+  margin-top: 10px;
+}
+
 /* Footer */
 .landing-footer {
   margin-top: 32px;
